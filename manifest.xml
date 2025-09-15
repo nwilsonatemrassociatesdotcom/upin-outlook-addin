@@ -11,7 +11,7 @@
   <IconUrl DefaultValue="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/assets/PinOff/24_regular.svg"/>
   <SupportUrl DefaultValue="https://localhost/support"/>
   <AppDomains>
-    <AppDomain>https://your-github-pages-domain</AppDomain>
+    <AppDomain>https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -24,7 +24,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://your-github-pages-domain/taskpane.html"/>
+        <SourceLocation DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
