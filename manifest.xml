@@ -2,32 +2,42 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
            xsi:type="MailApp">
-  <Id>00000000-0000-0000-0000-000000000001</Id>
+  <Id>12345678-1234-1234-1234-123456789012</Id>
   <Version>1.0.0.0</Version>
   <ProviderName>Personal</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Unpin All"/>
+  <DisplayName DefaultValue="Unpin All Emails"/>
   <Description DefaultValue="Bulk unpin all pinned emails in your inbox."/>
-  <IconUrl DefaultValue="https://github.com/nwilsonatemrassociatesdotcom/upin-outlook-addin/blob/raw/icon.png"/>
-  <SupportUrl DefaultValue="https://localhost/support"/>
+  <IconUrl DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/icon.png"/>
+  <SupportUrl DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/"/>
   <AppDomains>
-    <AppDomain>https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/</AppDomain>
+    <AppDomain>https://nwilsonatemrassociatesdotcom.github.io</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
   </Hosts>
   <Requirements>
-    <Sets DefaultMinVersion="1.1">
+    <Sets DefaultMinVersion="1.5">
       <Set Name="Mailbox"/>
     </Sets>
   </Requirements>
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/"/>
-        <RequestedHeight>250</RequestedHeight>
+        <SourceLocation DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/taskpane.html"/>
+        <RequestedHeight>400</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/taskpane.html"/>
+        <RequestedHeight>400</RequestedHeight>
       </DesktopSettings>
     </Form>
   </FormSettings>
   <Permissions>ReadWriteMailbox</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="PointReadOnly">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+  </Rule>
 </OfficeApp>
