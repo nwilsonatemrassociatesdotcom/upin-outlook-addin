@@ -8,7 +8,7 @@
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Unpin All"/>
   <Description DefaultValue="Bulk unpin all pinned emails in your inbox."/>
-  <IconUrl DefaultValue="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/assets/PinOff/24_regular.svg"/>
+  <IconUrl DefaultValue="https://github.com/nwilsonatemrassociatesdotcom/upin-outlook-addin/blob/main/icon.png"/>
   <SupportUrl DefaultValue="https://localhost/support"/>
   <AppDomains>
     <AppDomain>https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/</AppDomain>
