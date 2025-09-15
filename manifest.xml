@@ -7,7 +7,7 @@
   <ProviderName>Personal</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Unpin All Emails"/>
-  <Description DefaultValue="Bulk unpin all pinned emails in your inbox."/>
+  <Description DefaultValue="Bulk unpin all pinned emails in your inbox"/>
   <IconUrl DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/icon.png"/>
   <SupportUrl DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/"/>
   <AppDomains>
@@ -30,7 +30,4 @@
     </Form>
   </FormSettings>
   <Permissions>ReadWriteMailbox</Permissions>
-  <Rule xsi:type="RuleCollection" Mode="PointReadOnly">
-    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
-  </Rule>
 </OfficeApp>
