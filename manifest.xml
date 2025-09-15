@@ -4,7 +4,7 @@
            xsi:type="MailApp">
   <Id>12345678-1234-1234-1234-123456789012</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>EMRAssociatesInc</ProviderName>
+  <ProviderName>Personal</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Unpin All Emails"/>
   <Description DefaultValue="Bulk unpin all pinned emails in your inbox."/>
