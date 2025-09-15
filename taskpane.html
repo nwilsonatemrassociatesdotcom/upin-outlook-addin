@@ -1,12 +1,33 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Unpin All</title>
-  <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
-  <script src="taskpane.js"></script>
-</head>
-<body>
-  <h2>Unpin All Emails</h2>
-  <button id="unpinButton">Unpin All</button>
-</body>
-</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:type="MailApp">
+  <Id>00000000-0000-0000-0000-000000000001</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Personal</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Unpin All"/>
+  <Description DefaultValue="Bulk unpin all pinned emails in your inbox."/>
+  <IconUrl DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/icon.png"/>
+  <SupportUrl DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/"/>
+  <AppDomains>
+    <AppDomain>https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="Mailbox"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://nwilsonatemrassociatesdotcom.github.io/upin-outlook-addin/taskpane.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteMailbox</Permissions>
+</OfficeApp>
